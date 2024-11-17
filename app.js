@@ -35,7 +35,7 @@ function findUser() {
             
         })
         .catch((err) => {
-            userBox.innerHTML = `${err.message}`; 
+            userBox.innerHTML = `<h3>${err.message}</h3>`; 
         }) 
         userName.value = "";
     }
