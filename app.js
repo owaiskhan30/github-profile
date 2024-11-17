@@ -8,6 +8,7 @@ function findUser() {
     if(userName.value === "") {
         alert("Enter Your Username First");
     } else {
+        userName.value = "";
         fetch(`https://api.github.com/users/${userName.value}`)
 
         .then((res) => {
