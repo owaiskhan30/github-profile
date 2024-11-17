@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Outfit", sans-serif;
+    background: #000;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainBox {
+    box-shadow: 0 0 7px 6px #ffffff1f;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+}
+.mainBox h1 {
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.mainBox input#user_input {
+    width: 70%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    outline: none;
+    box-shadow: none;
+}
+.mainBox button {
+    border-radius: 5px !important;
+    background: #fff;
+    border: 1px solid #fff;
+    width: 26%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.container .userBox {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.container .user_img {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.container .user_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .use_Info h1 {
+    color: #000;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 767px) {
+    .mainBox {
+        width: 95%;
+        padding: 30px 20px;
+    }
+    .mainBox h1 {
+        font-size: 27px;
+        line-height: 37px;
+        margin-bottom: 30px;
+    }
+    .mainBox input#user_input {
+        width: 100%;
+    }
+    .mainBox button {
+        width: 100%;
+        margin: 0 !important;
+    }
+    body {
+        padding: 50px 0;
+    }
+    .container .user_img {
+        height: 300px;
+    }
+    .container .userBox {
+        padding: 10px;
+    }
+}
